@@ -1,0 +1,9 @@
+# Column
+
+ComponentColumn.mORecomponents: "mORecomponents mod"
+
+# Parts
+
+mORecomponents.OrGate: "Or Gate"
+mORecomponents.ROM: "ROM"
+mORecomponents.SXorgate: "Small Xor Gate"

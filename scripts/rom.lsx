@@ -1,0 +1,4 @@
+when in[1] & !mem[0]
+    mem[0] = 1
+    out = in[0]
+end
