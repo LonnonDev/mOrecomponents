@@ -19,8 +19,8 @@ OrGate:
             -
                 position: (0, 0.5, 0.5)
                 rotation: (90, 0, 0)
-    logicScript: orgate
     placingRules: Standard
+
 
 SXorGate:
     column: "mORecomponents"
@@ -43,5 +43,5 @@ SXorGate:
             -
                 position: (0, 0.5, 0.5)
                 rotation: (90, 0, 0)
-    logicScript: xorgate
+    logicCode: mORecomponents.XorGate
     placingRules: Standard

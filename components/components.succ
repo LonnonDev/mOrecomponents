@@ -16,5 +16,48 @@ ROM:
         outputs:
             -
                 position: (0, 1, 1)
-    logicScript: rom
+    logicCode: mORecomponents.ROM
+    placingRules: Standard
+
+SevenSegEncoder:
+    column: "mORecomponents"
+    prefab:
+        blocks:
+            -
+                color: 64a0e5
+                position: (1.5, 0, 0)
+                scale: (4, 2, 1)
+        inputs:
+            -
+                position: (0, 0.5, -0.5)
+                rotation: (-90, 0, 0)
+                length: 0.6
+            -
+                position: (1, 0.5, -0.5)
+                rotation: (-90, 0, 0)
+                length: 0.6
+            -
+                position: (2, 0.5, -0.5)
+                rotation: (-90, 0, 0)
+                length: 0.6
+            -
+                position: (3, 0.5, -0.5)
+                rotation: (-90, 0, 0)
+                length: 0.6
+        outputs:
+            -
+                position: (0, 0.5, 0.5)
+            -
+                position: (1, 0.5, 0.5)
+            -
+                position: (2, 0.5, 0.5)
+            -
+                position: (3, 0.5, 0.5)
+            -
+                position: (0, 1.5, 0.5)
+            -
+                position: (1, 1.5, 0.5)
+            -
+                position: (2, 1.5, 0.5)
+    logicCode: mORecomponents.SevenSegEncoder
     placingRules: Standard

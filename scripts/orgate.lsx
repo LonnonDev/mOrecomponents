@@ -1,3 +1,0 @@
-any
-	out = or(in[0..2'])
-end
