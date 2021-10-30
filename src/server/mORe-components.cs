@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System;
-using LogicWorld.Server.Circuitry;
+using LogicAPI.Server.Components;
 using LogicWorld.Server;
 
 namespace mORecomponents {
