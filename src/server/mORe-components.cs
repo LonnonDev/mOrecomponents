@@ -2,6 +2,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System;
 using LogicWorld.Server.Circuitry;
+using LogicWorld.Server;
 
 namespace mORecomponents {
     public class ROM : LogicComponent {
