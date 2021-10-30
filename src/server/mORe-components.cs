@@ -1,9 +1,9 @@
+using System.ComponentModel;
 using System.Diagnostics;
 using System;
 using LogicWorld.Server.Circuitry;
 
-namespace mORecomponents
-{
+namespace mORecomponents {
     public class ROM : LogicComponent {
         private int value { get; set; }
         protected override void DoLogicUpdate() {
@@ -131,6 +131,20 @@ namespace mORecomponents
     public class XorGate : LogicComponent {
         protected override void DoLogicUpdate() {
             base.Outputs[0].On = base.Inputs[0].On ^ base.Inputs[1].On;
+        }
+    }
+
+    public class RAM : LogicComponent {
+
+        public bool[] states = { false, false };
+
+        protected override void DoLogicUpdate() {
+            bool writevalue = base.Inputs[0].On;
+            bool write = base.Inputs[2].On;
+            bool address = base.Inputs[1].On;
+            int index = write ? 1 : 0;
+            states[index] = writevalue;
+            base.Outputs[index].On = states[index];
         }
     }
 }
